@@ -1,0 +1,28 @@
+/* ==========================================
+   INDEX.CSS - TÙY CHỈNH DÀNH RIÊNG CHO TRANG CHỦ
+   ========================================== */
+
+/* Ví dụ: Phần Banner giới thiệu lớp ở trang chủ */
+.hero-banner {
+    padding: 60px 0;
+    text-align: center;
+    color: #0D47A1;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Ví dụ: Khung chứa tin tức / hoạt động nổi bật */
+.featured-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #90CAF9;
+    transition: transform 0.2s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
