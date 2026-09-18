@@ -1,0 +1,91 @@
+/* ==========================================
+   GLOBAL.CSS - CẤU HÌNH VÀ HEADER DÙNG CHUNG
+   Bảng màu Palette: #E3F2FD | #90CAF9 | #2196F3 | #0D47A1
+   ========================================== */
+
+/* 1. Màu nền toàn trang (Màu nhạt nhất trên cùng) */
+body.custom-body-bg {
+    background-color: #E3F2FD !important;
+}
+
+/* 2. Màu thanh Header / Navbar (Màu thứ 2) */
+.custom-navbar {
+    background-color: #90CAF9 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Chữ hiển thị trên thanh Header */
+.custom-nav-link {
+    color: #0D47A1 !important;
+    font-weight: 600;
+    padding: 8px 16px !important;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link.active {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0D47A1 !important;
+}
+
+/* 3. Dropdown Menu Cấp 1 (Màu thứ 3: #2196F3) */
+.custom-dropdown-menu {
+    background-color: #2196F3 !important;
+    border: none !important;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    padding: 6px 0;
+}
+
+.custom-dropdown-item {
+    color: #ffffff !important;
+    padding: 9px 18px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.custom-dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+}
+
+/* 4. Dropdown Submenu Cấp 2 - Mở sang phải (Màu thứ 4: #0D47A1) */
+.custom-submenu {
+    background-color: #0D47A1 !important;
+    border: none !important;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    padding: 6px 0;
+}
+
+/* Cơ chế Hover mở Submenu cấp 1 & cấp 2 sang phải */
+@media (min-width: 992px) {
+    .custom-dropdown:hover > .custom-dropdown-menu {
+        display: block !important;
+        margin-top: 0;
+    }
+
+    .custom-submenu-container {
+        position: relative;
+    }
+
+    .custom-submenu-container > .custom-submenu {
+        display: none !important;
+        position: absolute !important;
+        left: 100% !important;
+        top: 0 !important;
+        margin-top: -6px !important;
+        min-width: 190px;
+    }
+
+    .custom-submenu-container:hover > .custom-submenu {
+        display: block !important;
+    }
+}
+
+/* Icon Toggler trên thiết bị Mobile */
+.custom-toggler {
+    border-color: #0D47A1 !important;
+}
