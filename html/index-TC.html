@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ - Lớp 10A12</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Link CSS cá nhân (Hãy đảm bảo đường dẫn này trỏ đúng tới file CSS của bạn) -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" href="../assets/img/logo lớp.png" type="image/x-icon">
+</head>
+
+<body class="custom-body-bg">
+
+  <!-- HEADER / NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <!-- Logo bên trái -->
+      <a class="navbar-brand py-0" href="#">
+        <img src="../assets/img/logo lớp.png" alt="Logo Lớp 10A12" width="50" height="50"
+          class="d-inline-block align-text-top rounded-circle">
+      </a>
+
+      <!-- Nút Toggle Mobile -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar10A12" aria-controls="navbar10A12" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu chính giữa -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbar10A12">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index-TC.html">Trang chủ</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="index-HĐ.html">Hoạt động</a>
+          </li>
+
+          <!-- Menu Giới thiệu -->
+          <li class="nav-item dropdown custom-dropdown">
+            <a class="nav-link custom-nav-link dropdown-toggle" href="#" role="button">
+              Giới thiệu
+            </a>
+            <ul class="dropdown-menu custom-dropdown-menu">
+              <li><a class="dropdown-item custom-dropdown-item" href="detail-gvcn.html">GVCN</a></li>
+
+              <!-- Submenu: Ban Cán Sự -->
+              <li class="custom-submenu-container">
+                <a class="dropdown-item custom-dropdown-item d-flex justify-content-between align-items-center"
+                  href="#">
+                  Ban Cán Sự <i class="bi bi-chevron-right ms-2 fs-7"></i>
+                </a>
+                <ul class="dropdown-menu custom-submenu">
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Trưởng</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Bí Thư</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Học Tập</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Lao Động</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Trật Tự</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Văn Thể Mỹ</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Thủ Quỹ</a></li>
+                </ul>
+              </li>
+
+              <!-- Submenu: Tổ -->
+              <li class="custom-submenu-container">
+                <a class="dropdown-item custom-dropdown-item d-flex justify-content-between align-items-center"
+                  href="#">
+                  Tổ <i class="bi bi-chevron-right ms-2 fs-7"></i>
+                </a>
+                <ul class="dropdown-menu custom-submenu">
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 1</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="detail-T2.html">Tổ 2</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 3</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-block" style="width: 50px;"></div>
+    </div>
+  </nav>
+ <!-- NỘI DUNG CHÍNH TRANG CHỦ -->
+<main class="container-fluid px-3 px-md-4 my-3">
+
+    <!-- 1. KHUNG CHÀO MỪNG (Bọc trong thẻ div riêng) -->
+    <div class="welcome-box text-center text-white py-4 py-md-5 px-3 mb-4">
+        <h1 class="welcome-title text-nowrap m-0">CHÀO MỪNG ĐẾN VỚI LỚP 10A12</h1>
+        <p class="school-year mt-2 mb-0">Năm học: 2026-2027</p>
+    </div>
+
+    <!-- 2. KHUNG GIÁO VIÊN CHỦ NHIỆM -->
+    <div class="gvcn-card text-center mx-auto mb-5 p-4">
+        <!-- Logo GVCN hình tròn -->
+        <div class="gvcn-avatar-wrapper mb-3">
+            <img src="../assets/img/gvcn.jpg" alt="Giáo viên chủ nhiệm" class="gvcn-avatar">
+        </div>
+        <!-- Tên GVCN -->
+        <h3 class="gvcn-name mb-2">Bùi Mai Kim Thanh</h3>
+        <!-- Badge Chức vụ -->
+        <span class="badge custom-badge mb-3">Giáo Viên Chủ Nhiệm</span>
+       
+    </div>
+
+    <!-- 3. SƠ ĐỒ LỚP HỌC -->
+<div class="seating-plan-section mb-4">
+    <!-- Tiêu đề Sơ đồ lớp -->
+    <h4 class="section-title mb-3 d-flex align-items-center">
+        <i class="bi bi-grid-3x3-gap-fill me-2"></i> Sơ Đồ Lớp Học
+    </h4>
+
+    <!-- Danh sách 4 Tổ -->
+    <div class="row g-3">
+        
+        <!-- TỔ 4 (Cạnh Bàn GV) -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="group-column">
+                <div class="group-header">Tổ 4 (Cạnh Bàn GV)</div>
+                <div class="seating-grid">
+                    <div class="seat-row">
+                        <span class="seat"></span>
+                        <span class="seat">Khánh Châu</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Như Quỳnh</span>
+                        <span class="seat">Triết Gia</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat"></span>
+                        <span class="seat">Hoàng Dung</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Quang Vinh</span>
+                        <span class="seat">Phương Phi</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Anh Hào</span>
+                        <span class="seat">Khánh Vy</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Quốc Hưng</span>
+                        <span class="seat">Quang Huy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TỔ 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="group-column">
+                <div class="group-header">Tổ 3</div>
+                <div class="seating-grid">
+                    <div class="seat-row">
+                        <span class="seat">Thế Đức</span>
+                        <span class="seat">Minh Phú</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Thúy Bình</span>
+                        <span class="seat">Minh Thuận</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Tâm Như</span>
+                        <span class="seat">Kiến Văn</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Trí Việt</span>
+                        <span class="seat">Đoan Phương</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Đan Quế</span>
+                        <span class="seat">Huỳnh Lam</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Gia Bảo</span>
+                        <span class="seat">Đông Quân</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TỔ 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="group-column">
+                <div class="group-header">Tổ 2</div>
+                <div class="seating-grid">
+                    <div class="seat-row">
+                        <span class="seat">Khánh Thy</span>
+                        <span class="seat">Hữu Phước</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Huỳnh Anh</span>
+                        <span class="seat">Uyên Nhi</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Minh Thành</span>
+                        <span class="seat">Bảo Hân</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Minh Khang</span>
+                        <span class="seat">Đan Lê</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Thục Hân</span>
+                        <span class="seat">Bảo Ngân</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Tuấn Phát</span>
+                        <span class="seat">Bảo Trân</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TỔ 1 (Gần Cửa) -->
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="group-column">
+                <div class="group-header">Tổ 1 (Gần Cửa)</div>
+                <div class="seating-grid">
+                    <div class="seat-row">
+                        <span class="seat">Anh Thư</span>
+                        <span class="seat">Thiên Phúc</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Minh Nhật</span>
+                        <span class="seat">Như Ý</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Như Huỳnh</span>
+                        <span class="seat">An Bình</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Minh Khoa</span>
+                        <span class="seat">Bảo Ngọc</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Hoàng Kim</span>
+                        <span class="seat">Nguyên Lộc</span>
+                    </div>
+                    <div class="seat-row">
+                        <span class="seat">Kỳ Nam</span>
+                        <span class="seat">Nghiệp Hữu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</main>
+
+    <!-- FOOTER (ĐƯỢC THÊM MỚI) -->
+    <footer class="custom-footer">
+        <div class="container text-center">
+            <!-- Tiêu đề Thông tin liên hệ -->
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h5 class="footer-title">Thông tin liên hệ</h5>
+                </div>
+            </div>
+
+            <!-- Chia làm 2 cột: GVCN bên trái & Người thiết kế bên phải -->
+            <div class="row g-4">
+                <!-- Cột Giáo viên chủ nhiệm -->
+                <div class="col-6 col-md-6 border-end border-light-subtle">
+                    <h6 class="footer-subtitle"><i class="bi bi-person-badge me-1"></i> Giáo viên chủ nhiệm</h6>
+                    <p class="footer-info-item mb-1">Sđt: #</p>
+                    <p class="footer-info-item mb-0">Gmail: #</p>
+                </div>
+
+                <!-- Cột Người thiết kế -->
+                <div class="col-6 col-md-6">
+                    <h6 class="footer-subtitle"><i class="bi bi-code-slash me-1"></i> Người thiết kế</h6>
+                    <p class="footer-info-item mb-1">Sđt: 0936 296 505</p>
+                    <p class="footer-info-item mb-0">Gmail: tuphatnero10122011@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -26,3 +26,148 @@
 .featured-card:hover {
     transform: translateY(-5px);
 }
+/* ==========================================
+   INDEX.CSS - NỘI DUNG TRANG CHỦ
+   ========================================== */
+
+/* Thẻ div khung chào mừng */
+.welcome-box {
+    background-color: #0D47A1; /* Màu xanh đậm nổi bật tương phản nền nhạt */
+    border-radius: 16px;       /* Bo tròn góc khung */
+    box-shadow: 0 6px 18px rgba(13, 71, 161, 0.2);
+}
+
+/* Tiêu đề chính: Tự động thu phóng để không bao giờ bị xuống dòng */
+.welcome-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: clamp(1.5rem, 5.7vw, 3.3rem); 
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dòng Năm học */
+.school-year {
+    font-size: clamp(0.9rem, 2vw, 1.25rem);
+    font-weight: 500;
+    color: #90CAF9;            /* Màu xanh nhạt giúp làm dịu và nổi bật chữ */
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   KHUNG GIÁO VIÊN CHỦ NHIỆM
+   ========================================== */
+.gvcn-card {
+    background: linear-gradient(135deg, #0D47A1 0%, #1565C0 100%); /* Nền xanh đậm theo tông trang */
+    max-width: 650px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(13, 71, 161, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Ảnh đại diện tròn có viền trắng nổi */
+.gvcn-avatar-wrapper {
+    display: inline-block;
+}
+
+.gvcn-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Làm hình tròn */
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.gvcn-name {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.custom-badge {
+    background-color: #2196F3 !important; /* Màu nổi theo palette */
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.gvcn-quote {
+    color: #E3F2FD;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   SƠ ĐỒ LỚP HỌC (DẠNG BÀN ĐÔI 2 CỘT)
+   ========================================== */
+.section-title {
+    color: #0D47A1;
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+.group-column {
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.08);
+    border: 1px solid #90CAF9;
+    height: 100%;
+}
+
+/* Header tiêu đề của từng Tổ */
+.group-header {
+    background-color: #2196F3;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+/* Khung sơ đồ xếp bàn */
+.seating-grid {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Mỗi dãy/hàng bàn học gồm 2 vị trí ngồi */
+.seat-row {
+    display: flex;
+    gap: 6px;
+}
+
+/* Ô học sinh */
+.seat {
+    flex: 1;
+    background-color: #E3F2FD;
+    color: #0D47A1;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 8px 4px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #BBDEFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    transition: all 0.2s ease;
+}
+
+.seat:hover {
+    background-color: #90CAF9;
+    transform: translateY(-2px);
+}
+
+/* Chỗ trống không có người ngồi */
+.empty-seat {
+    background-color: transparent;
+    border: 1px dashed #E0E0E0;
+    pointer-events: none;
+}   
