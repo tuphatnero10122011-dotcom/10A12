@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang chủ - Lớp 10A12</title>
+  <title>Hoạt động - Lớp 10A12</title>
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <!-- Link CSS cá nhân (Hãy đảm bảo đường dẫn này trỏ đúng tới file CSS của bạn) -->
+  <!-- Link CSS cá nhân -->
   <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/index-HĐ.css">
   <link rel="icon" href="../assets/img/logo lớp.png" type="image/x-icon">
 </head>
 
@@ -22,39 +22,28 @@
   <!-- HEADER / NAVBAR -->
   <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
     <div class="container">
-      <!-- Logo bên trái -->
       <a class="navbar-brand py-0" href="#">
         <img src="../assets/img/logo lớp.png" alt="Logo Lớp 10A12" width="50" height="50"
           class="d-inline-block align-text-top rounded-circle">
       </a>
 
-      <!-- Nút Toggle Mobile -->
       <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbar10A12" aria-controls="navbar10A12" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Menu chính giữa -->
       <div class="collapse navbar-collapse justify-content-center" id="navbar10A12">
         <ul class="navbar-nav mb-2 mb-lg-0">
-
           <li class="nav-item">
-            <a class="nav-link custom-nav-link " href="index-TC.html">Trang chủ</a>
+            <a class="nav-link custom-nav-link" href="index-TC.html">Trang chủ</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link custom-nav-link active" href="index-HĐ.html">Hoạt động</a>
           </li>
-
-          <!-- Menu Giới thiệu -->
           <li class="nav-item dropdown custom-dropdown">
-            <a class="nav-link custom-nav-link dropdown-toggle" href="#" role="button">
-              Giới thiệu
-            </a>
+            <a class="nav-link custom-nav-link dropdown-toggle" href="#" role="button">Giới thiệu</a>
             <ul class="dropdown-menu custom-dropdown-menu">
               <li><a class="dropdown-item custom-dropdown-item" href="detail-gvcn.html">GVCN</a></li>
-
-              <!-- Submenu: Ban Cán Sự -->
               <li class="custom-submenu-container">
                 <a class="dropdown-item custom-dropdown-item d-flex justify-content-between align-items-center"
                   href="#">
@@ -70,62 +59,237 @@
                   <li><a class="dropdown-item custom-dropdown-item" href="#">Thủ Quỹ</a></li>
                 </ul>
               </li>
-
-              <!-- Submenu: Tổ -->
               <li class="custom-submenu-container">
                 <a class="dropdown-item custom-dropdown-item d-flex justify-content-between align-items-center"
                   href="#">
                   Tổ <i class="bi bi-chevron-right ms-2 fs-7"></i>
                 </a>
                 <ul class="dropdown-menu custom-submenu">
-                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 1</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="detail-T1.html">Tổ 1</a></li>
                   <li><a class="dropdown-item custom-dropdown-item" href="detail-T2.html">Tổ 2</a></li>
-                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 3</a></li>
-                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 4</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="detail-T3.html">Tổ 3</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="detail-T4.html">Tổ 4</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-
         </ul>
       </div>
-
       <div class="d-none d-lg-block" style="width: 50px;"></div>
     </div>
   </nav>
+
+  <!-- NỘI DUNG CHÍNH TRANG HOẠT ĐỘNG -->
   <main class="container my-4">
-    
-        <!-- Nội dung trang chủ của bạn sẽ viết ở đây -->
-    </main>
 
-    <!-- FOOTER (ĐƯỢC THÊM MỚI) -->
-    <footer class="custom-footer">
-        <div class="container text-center">
-            <!-- Tiêu đề Thông tin liên hệ -->
-            <div class="row mb-3">
-                <div class="col-12">
-                    <h5 class="footer-title">Thông tin liên hệ</h5>
-                </div>
+    <!-- Tiêu đề trang -->
+    <div class="text-center mb-4">
+      <h2 class="activity-page-title text-uppercase fw-bold">Hoạt Động Nổi Bật Lớp 10A12</h2>
+      <p class="text-muted fs-6">Nhấn vào từng hình ảnh để xem chi tiết thông tin và ý nghĩa của hoạt động</p>
+    </div>
+
+    <!-- CAROUSEL SLIDER -->
+    <div id="activityCarousel" class="carousel slide custom-carousel shadow-lg rounded-4 overflow-hidden mx-auto"
+      data-bs-ride="carousel" data-bs-interval="3500">
+
+      <!-- Nút chuyển Slide bên dưới -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#activityCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Khung chứa ảnh -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1: Hội Nghị Chi Đoàn -->
+        <div class="carousel-item active">
+          <div class="carousel-img-wrapper" data-bs-toggle="modal" data-bs-target="#modalAct1">
+            <img src="../assets/img/hoatdong1.jpg" class="d-block w-100 carousel-img" alt="Hội Nghị Chi Đoàn">
+            <div class="carousel-caption custom-caption">
+              <h5><i class="bi bi-flag-fill me-2"></i>Hội Nghị Chi Đoàn Lớp 10A12</h5>
+              <p class="d-none d-md-block mb-0">Nhấn vào ảnh để xem diễn biến và ý nghĩa hoạt động</p>
             </div>
 
-            <!-- Chia làm 2 cột: GVCN bên trái & Người thiết kế bên phải -->
-            <div class="row g-4">
-                <!-- Cột Giáo viên chủ nhiệm -->
-                <div class="col-6 col-md-6 border-end border-light-subtle">
-                    <h6 class="footer-subtitle"><i class="bi bi-person-badge me-1"></i> Giáo viên chủ nhiệm</h6>
-                    <p class="footer-info-item mb-1">Sđt: #</p>
-                    <p class="footer-info-item mb-0">Gmail: #</p>
-                </div>
-
-                <!-- Cột Người thiết kế -->
-                <div class="col-6 col-md-6">
-                    <h6 class="footer-subtitle"><i class="bi bi-code-slash me-1"></i> Người thiết kế</h6>
-                    <p class="footer-info-item mb-1">Sđt: 0936 296 505</p>
-                    <p class="footer-info-item mb-0">Gmail: tuphatnero10122011@gmail.com</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
+
+        <!-- Slide 2: Tặng quà Trung Thu cho các bạn nữ -->
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper" data-bs-toggle="modal" data-bs-target="#modalAct2">
+            <img src="../assets/img/hoatdong2.jpg" class="d-block w-100 carousel-img" alt="Tặng quà Trung Thu">
+            <div class="carousel-caption custom-caption">
+              <h5><i class="bi bi-gift-fill me-2"></i>Tặng Quà Trung Thu Cho Các Bạn Nữ</h5>
+              <p class="d-none d-md-block mb-0">Nhấn vào ảnh để xem diễn biến và ý nghĩa hoạt động</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 3: Chụp hình 3 thế hệ (3 Gen) -->
+        <div class="carousel-item">
+          <div class="carousel-img-wrapper" data-bs-toggle="modal" data-bs-target="#modalAct3">
+            <img src="../assets/img/hoatdong3.jpg" class="d-block w-100 carousel-img" alt="Chụp hình 3 gen">
+            <div class="carousel-caption custom-caption">
+              <h5><i class="bi bi-camera-fill me-2"></i>Chụp Hình Lưu Niệm 3 Thế Hệ (3 Gen)</h5>
+              <p class="d-none d-md-block mb-0">Nhấn vào ảnh để xem diễn biến và ý nghĩa hoạt động</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nút điều hướng Trái/Phải -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#activityCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#activityCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+  </main>
+
+  <!-- ==================== HỘP THOẠI CHI TIẾT (MODALS) ==================== -->
+
+  <!-- Modal 1: Hội Nghị Chi Đoàn -->
+  <div class="modal fade" id="modalAct1" tabindex="-1" aria-labelledby="modalAct1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header custom-modal-header">
+          <h5 class="modal-title fw-bold" id="modalAct1Label">
+            <i class="bi bi-flag-fill me-2"></i>Hội Nghị Chi Đoàn Lớp 10A12
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="text-center mb-3">
+            <img src="../assets/img/hoatdong1.jpg" class="img-fluid rounded-3 modal-body-img shadow-sm"
+              alt="Hội Nghị Chi Đoàn">
+          </div>
+
+          <h6 class="fw-bold text-primary mb-2"><i class="bi bi-journal-text me-1"></i> Diễn biến chính:</h6>
+          <p class="text-justify">
+            Hội nghị diễn ra trong không khí nghiêm trang với sự tham gia đầy đủ của toàn thể đoàn viên, thanh niên
+            trong chi đoàn cùng sự hiện diện của GVCN. Buổi lễ bắt đầu bằng nghi thức chào cờ, hát Quốc ca và Đoàn ca.
+            Tiếp đó, Ban Chấp hành báo cáo tổng kết công tác Đoàn nhiệm kỳ qua, thảo luận các chỉ tiêu thi đua học tập,
+            rèn luyện và tiến hành bầu ra Ban Chấp hành Chi Đoàn mới đầy nhiệt huyết cho năm học 2026-2027.
+          </p>
+
+          <h6 class="fw-bold text-primary mb-2"><i class="bi bi-heart-fill me-1"></i> Ý nghĩa hoạt động:</h6>
+          <p class="text-justify mb-0">
+            Hội nghị Chi Đoàn giúp củng cố bộ máy cán bộ Đoàn vững mạnh, đề ra phương hướng phấn đấu rõ ràng cho tập
+            thể. Đồng thời, đây cũng là dịp phát huy tinh thần tự chủ, trách nhiệm và tính dân chủ của các bạn học sinh
+            trong việc xây dựng lớp 10A12 ngày càng phát triển.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn custom-btn-close" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Tặng quà Trung Thu cho các bạn nữ -->
+  <div class="modal fade" id="modalAct2" tabindex="-1" aria-labelledby="modalAct2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header custom-modal-header">
+          <h5 class="modal-title fw-bold" id="modalAct2Label">
+            <i class="bi bi-gift-fill me-2"></i>Tặng Quà Trung Thu Cho Các Bạn Nữ
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="text-center mb-3">
+            <img src="../assets/img/hoatdong2.jpg" class="img-fluid rounded-3 modal-body-img shadow-sm"
+              alt="Tặng quà Trung Thu">
+          </div>
+
+          <h6 class="fw-bold text-primary mb-2"><i class="bi bi-journal-text me-1"></i> Diễn biến chính:</h6>
+          <p class="text-justify">
+            Nhân dịp Tết Trung Thu, các bạn nam lớp 10A12 đã bí mật chuẩn bị những món quà nhỏ và lời chúc dành tặng cho tất cả các bạn nữ trong lớp.
+            Sau khi tặng, cả lớp cùng nhau chụp một tấm hình lưu niệm, kỉ niệm Trung Thu 2026 thật vui vẻ cùng lớp 10A12.
+          </p>
+
+          <h6 class="fw-bold text-primary mb-2"><i class="bi bi-heart-fill me-1"></i> Ý nghĩa hoạt động:</h6>
+          <p class="text-justify mb-0">
+            Hoạt động không chỉ mang lại niềm vui bất ngờ cho các bạn nữ mà còn thể hiện sự quan tâm, tinh thần ga lăng
+            và sự đoàn kết giữa các thành viên. Những khoảnh khắc đáng nhớ này giúp kéo gần khoảng cách và thắt chặt
+            tình bạn trong tập thể 10A12.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn custom-btn-close" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Chụp hình 3 gen -->
+  <div class="modal fade" id="modalAct3" tabindex="-1" aria-labelledby="modalAct3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header custom-modal-header">
+          <h5 class="modal-title fw-bold" id="modalAct3Label">
+            <i class="bi bi-camera-fill me-2"></i>Chụp Hình Lưu Niệm 3 Thế Hệ (3 Gen)
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="text-center mb-3">
+            <img src="../assets/img/hoatdong3.jpg" class="img-fluid rounded-3 modal-body-img shadow-sm"
+              alt="Chụp hình 3 gen">
+          </div>
+
+          <h6 class="fw-bold text-primary mb-2"><i class="bi bi-journal-text me-1"></i> Diễn biến chính:</h6>
+          <p class="text-justify">
+            Buổi chụp hình diễn ra tại khu vực sân trường với sự hội tụ đông đủ 3 thế hệ A12 (10A12, 11A12 và 12A12). Tất cả
+            cùng khoác lên mình bộ đồng phục truyền thống, xếp hình đội ngũ đẹp mắt và cùng chụp những tấm hình, ghi lại những khoảnh khắc đẹp nhất dưới mái trường thân yêu.
+            
+          </p>
+
+          <h6 class="fw-bold text-primary mb-2"><i class="bi bi-heart-fill me-1"></i> Ý nghĩa hoạt động:</h6>
+          <p class="text-justify mb-0">
+            Đây là hoạt động truyền thống có giá trị tinh thần to lớn, thể hiện sự kết nối truyền thống qua nhiều thế hệ
+            học sinh. Bức ảnh là kỷ niệm vô giá ghi dấu sự tiếp nối, tự hào và tinh thần đoàn kết không ngừng của các hệ
+            học sinh dưới mái trường. Bức hình ấy là khởi đầu cho 3 năm cấp 3 cùng lớp 10A12, cũng như là bức hình khép lại 3 năm dài dưới mái trường Mạc Đĩnh Chi cùng anh chị lớp 12A12.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn custom-btn-close" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="custom-footer">
+    <div class="container text-center">
+      <div class="row mb-3">
+        <div class="col-12">
+          <h5 class="footer-title">Thông tin liên hệ</h5>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-6 border-end border-light-subtle">
+          <h6 class="footer-subtitle"><i class="bi bi-person-badge me-1"></i> Giáo viên chủ nhiệm</h6>
+          <p class="footer-info-item mb-1">Sđt: #</p>
+          <p class="footer-info-item mb-0">Gmail: #</p>
+        </div>
+        <div class="col-6 col-md-6">
+          <h6 class="footer-subtitle"><i class="bi bi-code-slash me-1"></i> Người thiết kế</h6>
+          <p class="footer-info-item mb-1">Sđt: 0936 296 505</p>
+          <p class="footer-info-item mb-0">Gmail: tuphatnero10122011@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

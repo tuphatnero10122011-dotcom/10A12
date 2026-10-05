@@ -1,0 +1,109 @@
+/* ==========================================
+   HOATDONG.CSS - TRANG HOẠT ĐỘNG
+   ========================================== */
+
+.activity-page-title {
+  color: #0D47A1;
+  letter-spacing: 0.5px;
+}
+
+/* Khung Carousel */
+.custom-carousel {
+  max-width: 900px;
+  border: 3px solid #ffffff;
+}
+
+.carousel-img-wrapper {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Định dạng ảnh slide đồng đều kích thước */
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.carousel-img-wrapper:hover .carousel-img {
+  transform: scale(1.03);
+}
+
+/* Lớp phủ Gradient làm rõ chữ Caption */
+.custom-caption {
+  background: linear-gradient(0deg, rgba(13, 71, 161, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 20px 20px;
+  text-align: center;
+}
+
+.custom-caption h5 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+/* Nhãn nhắc bấm vào ảnh */
+.click-hint {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(13, 71, 161, 0.85);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.carousel-img-wrapper:hover .click-hint {
+  background-color: #2196F3;
+}
+
+/* Responsive cho màn hình điện thoại */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 320px;
+  }
+  
+  .custom-caption h5 {
+    font-size: 1rem;
+  }
+
+  .click-hint {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+}
+
+/* Styling Modal Pop-up */
+.custom-modal-header {
+  background-color: #0D47A1;
+  color: #ffffff;
+}
+
+.modal-body-img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.custom-btn-close {
+  background-color: #0D47A1;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 6px 20px;
+}
+
+.custom-btn-close:hover {
+  background-color: #2196F3;
+  color: #ffffff;
+}
+
+

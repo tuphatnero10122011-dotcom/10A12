@@ -118,14 +118,23 @@
     height: 100%;
 }
 
-/* Header tiêu đề của từng Tổ */
+/* Header tiêu đề của từng Tổ (dạng liên kết bấm được) */
 .group-header {
     background-color: #2196F3;
-    color: #ffffff;
+    color: #ffffff !important;
     text-align: center;
     padding: 10px 8px;
     font-weight: 700;
     font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hiệu ứng khi rê chuột vào tiêu đề Tổ */
+.group-header:hover {
+    background-color: #0D47A1;
+    color: #ffffff !important;
+    letter-spacing: 0.3px;
 }
 
 /* Khung sơ đồ xếp bàn */
