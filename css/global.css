@@ -1,20 +1,20 @@
 /* ==========================================
-   GLOBAL.CSS - CẤU HÌNH VÀ HEADER DÙNG CHUNG
+   GLOBAL.CSS - CẤU HÌNH HEADER VÀ FOOTER
    Bảng màu Palette: #E3F2FD | #90CAF9 | #2196F3 | #0D47A1
    ========================================== */
 
-/* 1. Màu nền toàn trang (Màu nhạt nhất trên cùng) */
+/* 1. Nền toàn trang */
 body.custom-body-bg {
     background-color: #E3F2FD !important;
+    /* Đã bỏ min-height và display flex để Footer trôi tự nhiên theo nội dung */
 }
 
-/* 2. Màu thanh Header / Navbar (Màu thứ 2) */
+/* 2. Header / Navbar (Màu thứ 2: #90CAF9) */
 .custom-navbar {
     background-color: #90CAF9 !important;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Chữ hiển thị trên thanh Header */
 .custom-nav-link {
     color: #0D47A1 !important;
     font-weight: 600;
@@ -60,7 +60,7 @@ body.custom-body-bg {
     padding: 6px 0;
 }
 
-/* Cơ chế Hover mở Submenu cấp 1 & cấp 2 sang phải */
+/* Cơ chế Hover mở Submenu */
 @media (min-width: 992px) {
     .custom-dropdown:hover > .custom-dropdown-menu {
         display: block !important;
@@ -85,7 +85,50 @@ body.custom-body-bg {
     }
 }
 
-/* Icon Toggler trên thiết bị Mobile */
 .custom-toggler {
     border-color: #0D47A1 !important;
+}
+
+/* ==========================================
+   5. FOOTER (MÀU GIỐNG HEADER & TRÔI THEO NỘI DUNG)
+   ========================================== */
+
+footer.custom-footer {
+    background-color: #90CAF9 !important; /* Đổi thành màu xanh giống Header */
+    color: #0D47A1;                       /* Chữ màu xanh đậm cho nổi bật */
+    padding: 25px 0;
+    border-top: 1px solid rgba(13, 71, 161, 0.1);
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #0D47A1;
+}
+
+.footer-subtitle {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #0D47A1;
+}
+
+.footer-info-item {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    color: #1565C0;
+    font-weight: 500;
+}
+
+.footer-info-item a {
+    color: #1565C0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-info-item a:hover {
+    color: #0D47A1;
+    text-decoration: underline;
 }

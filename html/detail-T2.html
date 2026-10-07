@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Tổ 2 - Lớp 10A12</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/to2.css">
+  <link rel="icon" href="../assets/img/logo lớp.png" type="image/x-icon">
+</head>
+
+<body class="custom-body-bg">
+
+  <!-- HEADER / NAVBAR -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand py-0" href="#">
+        <img src="../assets/img/logo lớp.png" alt="Logo Lớp 10A12" width="50" height="50"
+          class="d-inline-block align-text-top rounded-circle">
+      </a>
+
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar10A12" aria-controls="navbar10A12" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbar10A12">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="index-TC.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="index-HĐ.html">Hoạt động</a>
+          </li>
+          <li class="nav-item dropdown custom-dropdown">
+            <a class="nav-link custom-nav-link dropdown-toggle active" href="#" role="button">
+              Giới thiệu
+            </a>
+            <ul class="dropdown-menu custom-dropdown-menu">
+              <li><a class="dropdown-item custom-dropdown-item" href="detail-gvcn.html">GVCN</a></li>
+              <li class="custom-submenu-container">
+                <a class="dropdown-item custom-dropdown-item d-flex justify-content-between align-items-center"
+                  href="#">
+                  Ban Cán Sự <i class="bi bi-chevron-right ms-2 fs-7"></i>
+                </a>
+                <ul class="dropdown-menu custom-submenu">
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Trưởng</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Bí Thư</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Học Tập</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Lao Động</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Trật Tự</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Lớp Phó Văn Thể Mỹ</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Thủ Quỹ</a></li>
+                </ul>
+              </li>
+              <li class="custom-submenu-container">
+                <a class="dropdown-item custom-dropdown-item d-flex justify-content-between align-items-center"
+                  href="#">
+                  Tổ <i class="bi bi-chevron-right ms-2 fs-7"></i>
+                </a>
+                <ul class="dropdown-menu custom-submenu">
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 1</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item active" href="detail-T2.html">Tổ 2</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 3</a></li>
+                  <li><a class="dropdown-item custom-dropdown-item" href="#">Tổ 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block" style="width: 50px;"></div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER (Bố cục 2 bên) -->
+  <main class="container-fluid py-3 px-3">
+    <div class="row g-3">
+
+      <!-- CỘT BÊN TRÁI: SƠ ĐỒ CHỖ NGỒI (CỐ ĐỊNH KHI CUỘN) -->
+      <div class="col-12 col-lg-4 col-xl-3">
+        <div class="seating-chart-container">
+          <!-- Ô tiêu đề (Div không bấm được) -->
+          <div class="seating-chart-header">
+            <span>Tổ 2</span>
+            <i class="bi bi-arrow-right-short fs-4"></i>
+          </div>
+
+          <!-- Lưới sơ đồ chỗ ngồi (Bao gồm các nút bấm thành viên) -->
+          <div class="seating-grid">
+            <button class="seat-btn" type="button" data-member="Khánh Thy">Khánh Thy</button>
+            <button class="seat-btn" type="button" data-member="Hữu Phước">Hữu Phước</button>
+
+            <button class="seat-btn" type="button" data-member="Huỳnh Anh">Huỳnh Anh</button>
+            <button class="seat-btn" type="button" data-member="Uyên Nhi">Uyên Nhi</button>
+
+            <button class="seat-btn" type="button" data-member="Minh Thành">Minh Thành</button>
+            <button class="seat-btn" type="button" data-member="Bảo Hân">Bảo Hân</button>
+
+            <button class="seat-btn" type="button" data-member="Minh Khang">Minh Khang</button>
+            <button class="seat-btn" type="button" data-member="Đan Lê">Đan Lê</button>
+
+            <button class="seat-btn" type="button" data-member="Thực Hân">Thục Hân</button>
+            <button class="seat-btn" type="button" data-member="Bảo Ngân">Bảo Ngân</button>
+
+            <button class="seat-btn" type="button" data-member="Tuấn Phát">Tuấn Phát</button>
+            <button class="seat-btn" type="button" data-member="Bảo Trân">Bảo Trân</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CỘT BÊN PHẢI: NỘI DUNG VÀ HOẠT ĐỘNG THUỘC TỔ 2 -->
+      <div class="col-12 col-lg-8 col-xl-9">
+        <div class="bg-white p-4 rounded-4 shadow-sm">
+          <h3 class="fw-bold text-primary mb-3"><i class="bi bi-people-fill me-2"></i>Giới thiệu chung về Tổ 2</h3>
+          <p>Tổ 2 bao gồm 12 thành viên năng động, sáng tạo và luôn tích cực tham gia vào các phong trào học tập cũng
+            như hoạt động ngoại khóa của lớp 10A12.</p>
+
+          <hr class="my-4">
+
+          <h4 class="fw-bold text-dark mb-3"><i class="bi bi-trophy-fill text-warning me-2"></i>Hoạt động & Thành tích
+            nổi bật</h4>
+          <p>Dưới đây là lịch sử hoạt động và các phong trào thi đua mà Tổ 2 đã ghi lại trong thời gian qua:</p>
+
+          <!-- Ví dụ nội dung dài để thử nghiệm tính năng cuộn -->
+          <div class="d-flex flex-column gap-3 mt-3">
+            <div class="card border-0 bg-light p-3 rounded-3 shadow-sm">
+              <h5 class="fw-bold text-primary"> Học tập - Thuyết trình</h5>
+              <p class="mb-0 text-muted">Thuyết trình các môn: GD Kinh tế & Pháp luật, Hoạt động trải nghiệm,... đều
+                được đánh giá tốt và điểm cao. </p>
+            </div>
+            <div class="card border-0 bg-light p-3 rounded-3 shadow-sm">
+              <h5 class="fw-bold text-primary">Phong trào - Văn nghệ</h5>
+              <p class="mb-0 text-muted">Một số bạn tích cực tham gia phong trào và tập văn nghệ.</p>
+            </div>
+            <div class="card border-0 bg-light p-3 rounded-3 shadow-sm">
+              <h5 class="fw-bold text-primary">Trực nhật & Vệ sinh chung</h5>
+              <p class="mb-0 text-muted">Tổ 2 luôn hoàn thành xuất sắc các buổi trực nhật, đảm bảo lớp học sạch sẽ, ngăn
+                nắp.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="custom-footer mt-auto">
+    <div class="container text-center">
+      <div class="row mb-3">
+        <div class="col-12">
+          <h5 class="footer-title">Thông tin liên hệ</h5>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-6 border-end border-light-subtle">
+          <h6 class="footer-subtitle"><i class="bi bi-person-badge me-1"></i> Giáo viên chủ nhiệm</h6>
+          <p class="footer-info-item mb-1">Sđt: 0123456789</p>
+          <p class="footer-info-item mb-0">Gmail: cochunhiem@gmail.com</p>
+        </div>
+        <div class="col-6 col-md-6">
+          <h6 class="footer-subtitle"><i class="bi bi-code-slash me-1"></i> Người thiết kế</h6>
+          <p class="footer-info-item mb-1">Sđt: 0936 296 505</p>
+          <p class="footer-info-item mb-0">Gmail: tuphatnero10122011@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

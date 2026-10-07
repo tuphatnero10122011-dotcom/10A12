@@ -1,0 +1,52 @@
+/* ==========================================
+   CSS TRANG GIÁO VIÊN CHỦ NHIỆM (DETAIL-GVCN)
+   ========================================== */
+
+/* Khung chứa Card GVCN ghim cố định bên trái khi cuộn */
+@media (min-width: 992px) {
+  .gvcn-card-container {
+    position: sticky;
+    top: 70px; /* Cách Header khoảng 10px */
+    max-height: calc(100vh - 80px); /* Luôn cách mép dưới khoảng 10px */
+    overflow-y: auto;
+  }
+}
+
+/* Khung viền tổng thể */
+.gvcn-card-container {
+  background-color: #ffffff;
+  border: 2px solid #2196f3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15);
+}
+
+/* Header của khung GVCN */
+.gvcn-card-header {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 12px 16px;
+  text-align: center;
+  user-select: none;
+}
+
+/* Hình ảnh cô GVCN */
+.gvcn-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border: 1px solid #e3f2fd;
+}
+
+/* Danh sách gạch đầu dòng phần giới thiệu */
+.gvcn-info-list li {
+  color: #333333;
+}
+
+/* Khung trích dẫn mong muốn */
+.gvcn-quote-box {
+  background-color: #f8f9fa;
+  font-style: italic;
+}
